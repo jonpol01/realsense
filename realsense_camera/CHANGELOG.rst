@@ -2,6 +2,46 @@
 Changelog for package realsense_camera
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.8.0 (2017-03-27)
+------------------
+* Enable configuration of the TF publication rate when using tf_dynamic
+* Enable roslint when CATKIN_ENABLE_TESTING is True
+* Add option to link against non-catkin librealsense
+* Fixed LR auto exposure (#131)
+* Dynamic reconfig autoexposure/exposure control SR300/F200/R200 (#213)
+* Added check for depth_enable dynamic change
+* Update Debug Tool
+* Added SyncNodelet class as new base for F200/SR300/R200 (#207, #210)
+* Contributors: Amanda Brindle, Dmitry Rozhkov, James Sergeant, Mark Horn, Matthew Hansen, Reagan Lopez, Séverin Lemaignan
+
+1.7.2 (2017-03-01)
+------------------
+* Create tool to get debug info
+* Change tf to using setRPY for consistency
+* Changed fisheye_strobe and fisheye_external_trigger to static params
+* Contributors: Amanda Brindle, Mark Horn, Matthew Hansen, Wang Jinliang
+
+1.7.1 (2017-01-14)
+------------------
+* Generate Warning for non-validated camera firmware
+* Use shared timestamp for SR300/F200 cameras
+* Added retry in tests to avoid random failures
+* Contributors: Amanda Brindle, Mark D Horn, Ning Wang
+
+1.7.0 (2016-12-20)
+------------------
+* Enable ROS Lint
+* Update RGBD launch files
+* Add Dynamic Transforms support -- multi-cam (#120)
+* Change color stream default to 30fps
+* Major code refactor to use librealsense callbacks
+* Added imu_start_ts for imu sync
+* Make system wrapper function generic
+* Don't ignore linker flags set by user (Yocto fix)
+* Changed nodelet to use camera timestamps
+* Migrate README.md content to ROS wiki
+* Contributors: Dmitry Rozhkov, Mark D Horn, Matt Hansen
+
 1.6.1 (2016-11-18)
 ------------------
 * Clean up system process calls
